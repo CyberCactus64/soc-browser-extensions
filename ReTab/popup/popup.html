@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rename your browser tabs</title>
+  <style>
+    body { font-family: sans-serif; padding: 10px; width: 220px; }
+    input[type="text"] { width: 100%; padding: 5px; }
+    .options { margin-top: 10px; display: flex; align-items: center; justify-content: space-between; }
+    button { margin-top: 10px; width: 100%; }
+    label { font-size: 14px; }
+  </style>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+  <body>
+    <input type="text" id="newTitle" placeholder="New name" />
+    <div class="options">
+      <label><input type="checkbox" id="remember" /> Remember </label>
+    </div>
+    <button id="renameBtn">Change Title</button>
+    <button id="resetBtn">Reset Title</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
