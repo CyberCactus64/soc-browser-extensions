@@ -1,0 +1,27 @@
+{
+	"manifest_version": 3,
+	"name": "VirusTotal Search",
+	"version": "1.0",
+	"description": "Search selected text (expected SHA256 hash) on VirusTotal",
+	"permissions": [
+		"contextMenus",
+		"activeTab",
+		"scripting"
+	],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"icons": {
+		"16": "icons/icon_16.png",
+		"48": "icons/icon_48.png",
+		"128": "icons/icon_128.png"
+	},
+	"action": {
+		"default_icon": {
+			"16": "icons/icon_16.png",
+			"48": "icons/icon_48.png",
+			"128": "icons/icon_128.png"
+		},
+		"default_title": "Search selected text on VirusTotal"
+	}
+}
